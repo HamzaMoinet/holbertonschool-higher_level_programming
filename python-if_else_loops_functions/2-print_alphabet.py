@@ -1,2 +1,1 @@
-for i in range(97, 123):
-    print(chr(i), end="")
+print("".join("{:c}".format(i) for i in range(97, 123)), end="")
