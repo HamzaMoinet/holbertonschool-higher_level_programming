@@ -2,7 +2,7 @@
 import sys
 
 
-def nb_argument():
+if __name__ == "__main__":
     args = sys.argv[1:]
     num_args = len(args)
     if num_args == 0:
@@ -13,6 +13,3 @@ def nb_argument():
         print("{} arguments:".format(num_args))
     for i, arg in enumerate(args, 1):
         print("{}: {}".format(i, arg))
-
-if __name__ == "__main__":
-    nb_argument()
