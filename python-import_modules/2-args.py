@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 import sys
 
-if __name__ == "__main__":
+
+def nb_argument():
     args = sys.argv[1:]
     num_args = len(args)
     if num_args == 0:
@@ -12,3 +13,6 @@ if __name__ == "__main__":
         print("{} arguments:".format(num_args))
     for i, arg in enumerate(args, 1):
         print("{}: {}".format(i, arg))
+
+if __name__ == "__main__":
+    nb_argument()
