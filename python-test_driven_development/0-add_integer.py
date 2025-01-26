@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 This module provides basic arithmetic operations with input validation.
