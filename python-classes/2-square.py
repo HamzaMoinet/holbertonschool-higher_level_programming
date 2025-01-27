@@ -3,8 +3,17 @@
 
 
 class Square:
-    """size must be an integer"""
+    """private attribute size"""
+
     def __init__(self, size=0):
+        """
+        Args:
+            size (self, size=0): Defaults to 0.
+
+        Raises:
+            TypeError: size must be an integer
+            ValueError: ize must be >= 0
+        """
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
