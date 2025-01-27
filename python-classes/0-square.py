@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Programs that creates empt"""
+"""Programs that creates empty class"""
 
 
 class Square:
