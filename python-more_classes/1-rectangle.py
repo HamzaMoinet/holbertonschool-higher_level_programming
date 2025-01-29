@@ -3,15 +3,16 @@
 
 
 class Rectangle:
-    """Private attribute"""
+    """Private attribute width and height"""
 
     def __init__(self, width=0, height=0):
+        """"Initialise the rectangle"""
         self._width = width
         self._height = height
 
     @property
     def width(self):
-        """Getter for size"""
+        """Getter for width"""
         return self._width
 
     @width.setter
@@ -45,6 +46,7 @@ class Rectangle:
         return self._width * self._height
 
     def perimeter(self):
+        """Calcule the perimeter"""
         if self._height == 0 or self._width == 0:
             return 0
         return 2 * (self._height + self._width)
