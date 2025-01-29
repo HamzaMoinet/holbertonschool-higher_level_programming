@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """class Rectangle that defines a rectangle"""
 
-
 class Rectangle:
     """Private attribute width and height"""
 
@@ -17,7 +16,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """Setting for width"""
+        """Setter for width"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -32,7 +31,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """Setting for height"""
+        """Setter for height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         elif value < 0:
@@ -40,13 +39,12 @@ class Rectangle:
         else:
             self._height = value
 
-
     def area(self):
-        """Calculate the area"""
+        """Calculate and return the area of the rectangle"""
         return self._width * self._height
 
     def perimeter(self):
-        """Calcule the perimeter"""
+        """Calcule and return the perimeter of the rectangle"""
         if self._height == 0 or self._width == 0:
             return 0
         return 2 * (self._height + self._width)
