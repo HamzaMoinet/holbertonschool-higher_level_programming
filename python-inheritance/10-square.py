@@ -40,8 +40,10 @@ class Square(Rectangle):
     """Class Square from Rectangle"""
 
     def __init__(self, size):
+        """Instantiation with self"""
         self.integer_validator("self", size)
         self.__size = size
+        super().__init__(size, size)
 
     def size(self):
         """Getter for size"""
