@@ -2,7 +2,6 @@
 """Module to create class"""
 
 
-
 from abc import ABC, abstractmethod
 import math
 
@@ -30,7 +29,6 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-
         """Area calcul of Circle"""
         return math.pi * (self.radius ** 2)
 
@@ -49,7 +47,7 @@ class Rectangle(Shape):
 
     def area(self):
         """Area clacul of Rectangle"""
-        return  self.height * self.width
+        return self.height * self.width
 
     def perimeter(self):
         """perimeter calul of Rectangle"""
