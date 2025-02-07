@@ -5,6 +5,7 @@
 class Fish:
     """class fish
     """
+
     def swim(self):
         """Swim"""
         print("The fish is swimming")
@@ -13,8 +14,10 @@ class Fish:
         """Habitat"""
         print("The fish lives in water")
 
+
 class Bird:
     """Class Bird"""
+
     def fly(self):
         """Fly"""
         print("The bird is flying")
@@ -23,8 +26,10 @@ class Bird:
         """Habitat"""
         print("The bird lives in the sky")
 
+
 class FlyingFish(Fish, Bird):
     """Class FlyingFish"""
+
     def fly(self):
         """Fly"""
         print("The flying fish is comming!")
