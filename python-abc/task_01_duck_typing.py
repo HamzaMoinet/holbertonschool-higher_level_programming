@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Module to create class"""
+"""Module to create class
+"""
 
 
 from abc import ABC, abstractmethod
@@ -8,53 +9,54 @@ import math
 
 class Shape(ABC):
 
-    """Abstract class method"""
+    """Classe abstraite pour les formes géométriques."""
     @abstractmethod
     def area(self):
-        """Area shape"""
+        """Retourne l'aire de la forme."""
         pass
 
     @abstractmethod
     def perimeter(self):
-        """Perimeter shape"""
+        """Retourne le périmètre de la forme."""
         pass
 
 
 class Circle(Shape):
-    """Class Circle from Shape"""
+    """Représente un cercle avec un rayon donné."""
 
     def __init__(self, radius):
-        """Instantiation the radius of Circle """
+        """Initialise le cercle avec un rayon."""
 
         self.radius = radius
 
     def area(self):
-        """Area calcul of Circle"""
+
+        """Calcule l'aire du cercle."""
         return math.pi * (self.radius ** 2)
 
     def perimeter(self):
-        """Perimeter calcul of Circle"""
+        """Calcule le périmètre du cercle."""
         return 2 * math.pi * self.radius
 
 
 class Rectangle(Shape):
-    """Class Rectangle from Shape"""
+    """Représente un rectangle avec une largeur et une hauteur."""
 
     def __init__(self, width, height):
-        """Instantiation the width and height of Rectangle """
+        """Initialise le rectangle avec une largeur et une hauteur."""
         self.width = width
         self.height = height
 
     def area(self):
-        """Area clacul of Rectangle"""
+        """Calcule l'aire du rectangle."""
         return self.width * self.height
 
     def perimeter(self):
-        """perimeter calul of Rectangle"""
+        """Calcule le périmètre du rectangle."""
         return 2 * (self.width + self.height)
 
 
 def shape_info(shape):
-    """Print the area and perimeter for Circle and Rectangle"""
+    """Affiche l'aire et le périmètre de la forme."""
     print(f"Area: {shape.area()}")
     print(f"Perimeter: {shape.perimeter()}")
