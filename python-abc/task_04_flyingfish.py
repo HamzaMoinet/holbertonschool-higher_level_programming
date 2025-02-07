@@ -3,8 +3,7 @@
 
 
 class Fish:
-    """class fish
-    """
+    """class fish"""
 
     def swim(self):
         """Swim"""
@@ -32,7 +31,7 @@ class FlyingFish(Fish, Bird):
 
     def fly(self):
         """Fly"""
-        print("The flying fish is comming!")
+        print("The flying fish is soaring!")
 
     def swim(self):
         """Swim"""
