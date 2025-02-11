@@ -3,6 +3,7 @@
 
 
 class Student:
+    """Class Student"""
 
     def __init__(self, first_name, last_name, age):
         """Public instance attributes"""
