@@ -2,6 +2,7 @@
 import json
 import pickle
 
+
 class CustomObject:
 
     def __init__(self, name, age, is_student):
@@ -10,7 +11,8 @@ class CustomObject:
         self.is_student = is_student
 
     def display(self):
-        print(f"Name: {self.name}, Age: {self.age}, Is Student: {self.is_student}")
+        print(f"Name: {self.name}, Age: {self.age},
+              Is Student: {self.is_student}")
 
     def serialize(self, filename):
         try:
